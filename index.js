@@ -13,20 +13,20 @@ const tutorials = [
 
 function titleCased() {
   // debugger
-  tutorials.map((tutorial) => {
+  return tutorials.map((tutorial) => {
     tutorial = tutorial
       .split(" ")
       .map((word) => word[0].toUpperCase() + word.slice(1))
       .join(" ");
-    console.log(tutorial);
+    // console.log(tutorial);
     return tutorial;
   });
-  console.log(tutorials);
+  // console.log(tutorials);
 
-  return tutorials
+  // return tutorials
 }
 
-titleCased();
+console.log(titleCased())
 
 // //* here we pass function as an argument (callback function)
 // //* itterator map is calling passed function for every itteration
