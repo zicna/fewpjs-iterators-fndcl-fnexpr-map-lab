@@ -11,37 +11,23 @@ const tutorials = [
   "what is JSONP?",
 ];
 
+function titleCased() {
+  // debugger
+  tutorials.map((tutorial) => {
+    tutorial = tutorial
+      .split(" ")
+      .map((word) => word[0].toUpperCase() + word.slice(1))
+      .join(" ");
+    console.log(tutorial);
+    return tutorial;
+  });
+  console.log(tutorials);
 
-
-
-function titleCased (){
-  return tutorials.map((tutorial) => {
-    element[0].toUpperCase() + element.slice(1)
-  })
+  return tutorials
 }
-console.log(titleCased(tutorials))
-// let newArray = titleCased(tutorials)
-// console.log(newArray)
-// console.log(titleCased(tutorials))
-// let titleCased = (tutorial)=> {
-//   return tutorial[0].toUpperCase() + tutorial.slice(1)
-// }
 
-// const titleCased = () => {
-//   // use the .map method on the tutorials to return a new array
-//   return tutorials;
-// };
+titleCased();
 
-// const students = ["harry", "ron", "hermione", "ginevra"];
-// let rollCall = [];
-
-// for (const student of students) {
-//   rollCall.push(student + " the wizard");
-// }
-// // console.log(rollCall)
-// let studentRollCall = (student) => {
-//   return student + " the wizard";
-// };
 // //* here we pass function as an argument (callback function)
 // //* itterator map is calling passed function for every itteration
 // //*
@@ -73,4 +59,3 @@ console.log(titleCased(tutorials))
 // });
 
 // console.log(activateRobots, robots);
-
