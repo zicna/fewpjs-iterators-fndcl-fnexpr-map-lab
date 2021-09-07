@@ -12,7 +12,6 @@ const tutorials = [
 ];
 
 function titleCased() {
-  // debugger
   return tutorials.map((tutorial) => {
     tutorial = tutorial
       .split(" ")
@@ -21,9 +20,6 @@ function titleCased() {
     // console.log(tutorial);
     return tutorial;
   });
-  // console.log(tutorials);
-
-  // return tutorials
 }
 
 console.log(titleCased())
